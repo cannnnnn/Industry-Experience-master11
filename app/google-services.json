@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "127248076779",
+    "firebase_url": "https://savingwildlife-8f9bb.firebaseio.com",
+    "project_id": "savingwildlife-8f9bb",
+    "storage_bucket": "savingwildlife-8f9bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127248076779:android:784ebca04099420e",
+        "android_client_info": {
+          "package_name": "com.iteration1.savingwildlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127248076779-tjgk0ch8gdsbmne56f6fjkfdk6m629h5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iteration1.savingwildlife",
+            "certificate_hash": "5fbf1fa3773f1126fe7f373029b98ac361c1fa0e"
+          }
+        },
+        {
+          "client_id": "127248076779-mhp50704jtvg9nbqkr4rnlcuhlshqu82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-awgAXu1E4ZqTlI7_vGR-6NjPRFR7Zbw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127248076779-mhp50704jtvg9nbqkr4rnlcuhlshqu82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">"Beach Step"</string>
+    <string name="homepage">Home Page</string>
+    <string name="fishstatistics">Fish Statistics</string>
+    <string name="pollutionstatistics">Pollution Statistics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="map">Map</string>
+    <string name="aboutus">About Us</string>
+    <string name="label">""</string>
+    <string name="create_events">Create event</string>
+    <string name="view_events">View event</string>
+    <string name="my_application">My Application</string>
+    <string name="know_our_beaches">Know our beaches</string>
+    <drawable name="splash_color">#3198d8</drawable>
+    <color name="theme_color">#3198d8</color>
+    <color name="txt_color">#ff37474f</color>
+    <color name="bg_color">#F3F7F7</color>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDmgzep8MB2yqQJUFtYtMQvqMCNO7YpvCU</string>
+    <string name="general_info">The above picture shows the main fish concentration of South Pacific Ocean in last 25 years.<br/><br/>Millions of fish and other marine animals live in the blue sea around us, and together formed an indispensable part of our eco system.</string>
+    <string name="last_paragraph">In past clean-up events, those are the most common things found on beach.\n\nPlastic pollution, as a symbol of human activity, is the main part of beach pollution.</string>
+    <string name="about_me">This application was designed by a team of students from Monash University in 2018 to enable common people to take action to improve the marine ecology in Australia. Our mission is to reduce the litter found on the beach shores which directly washes into the ocean thereby harming marine life. We believe every small step matters and no contribution is too little. Let us protect the beautiful beaches and oceans of Australia and works towards a sustainable future for our planet.</string>
+    <string name="make_reports">Make report</string>
+    <string name="find_events">Find events</string>
+    <string name="beach_list">Beach list</string>
+
+
+</resources>

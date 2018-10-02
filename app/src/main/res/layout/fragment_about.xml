@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/theme_color"
+        android:id="@+id/linear">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/splash_screen"
+            android:contentDescription="Logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Beach Step © Co-Koala"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="18dp"
+        android:textSize="40sp"
+        android:textColor="#ff37474f"
+        android:layout_gravity="center_vertical|end"
+        android:id="@+id/abouttxt"
+        android:background="@drawable/text_view_background"
+        android:layout_below="@id/linear"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textSize="18sp"-->
+        <!--android:background="@drawable/text_view_background"-->
+        <!--android:id="@+id/abouttxt"-->
+        <!--android:text="@string/about_me"-->
+        <!--android:layout_below="@+id/linear" />-->
+
+</RelativeLayout>

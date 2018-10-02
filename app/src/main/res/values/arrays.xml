@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report_types">
+        <item>Select one</item>
+        <item>Illegal fishing</item>
+        <item>Dumping of rubbish</item>
+        <item>Other inappropriate behaviour</item>
+    </string-array>
+
+    <string-array name="beach_names">
+        <item>Select one</item>
+        <item>Mordialloc Beach</item>
+        <item>Hampton Beach</item>
+        <item>Brighton Beach</item>
+        <item>Elwood Beach</item>
+        <item>St Kilda Beach</item>
+        <item>Williamstown Beach</item>
+        <item>Frankston Beach</item>
+        <item>Altona Beach</item>
+        <item>Mothers Beach</item>
+        <item>Sorrento Beach</item>
+    </string-array>
+
+
+    <string-array name="orders">
+        <item>Order by</item>
+        <item>Time: closest</item>
+        <item>Beach: A-Z</item>
+        <item>Latest created</item>
+    </string-array>
+
+</resources>

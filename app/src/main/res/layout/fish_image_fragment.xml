@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_background"
+        android:text="Learn about the most common fishes live in south east coast of Victoria."
+        android:textSize="18sp"
+        android:id="@+id/common"
+        android:layout_below="@+id/banner" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:background="#022F29"
+        android:id="@+id/line"
+        android:layout_below="@+id/common" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/detail"
+        android:layout_below="@+id/line" />
+
+
+    <WebView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="#ff37474f"
+        android:layout_gravity="center_vertical|end"
+        android:id="@+id/fishtxt"
+        android:background="@drawable/text_view_background"
+        android:layout_below="@id/line"/>
+
+
+</RelativeLayout>

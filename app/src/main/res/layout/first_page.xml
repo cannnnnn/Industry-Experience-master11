@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/top"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="One step today makes a big change tomorrow."
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#022F29" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_events"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:drawableTop="@drawable/ic_create_event"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:drawablePadding="15dp"
+                    android:id="@+id/create_event"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/make_reports"
+                    android:textSize="16sp"
+                    android:drawableTop="@drawable/ic_report"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawablePadding="15dp"
+                    android:id="@+id/make_report"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/find_events"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/ic_find_event"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="15dp"
+                android:id="@+id/find_event"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/beach_list"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/ic_beach"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="15dp"
+                android:id="@+id/beach_list"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:textAlignment="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="My events"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:drawableTop="@drawable/ic_my_events"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="15dp"
+            android:id="@+id/my_events"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Beach map"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:drawableTop="@drawable/ic_beach_map"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:drawablePadding="15dp"
+            android:id="@+id/beach_map"
+            android:layout_weight="1"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
