@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -39,6 +40,7 @@ import java.util.Random;
 
 public class CreateEvent extends AppCompatActivity {
     private Toolbar toolbar;
+    private EditText editText;
     private TextView toolbar_title;
     private DatePicker eventDate;
     private Spinner spinnerForEventLocation;
@@ -84,6 +86,7 @@ public class CreateEvent extends AppCompatActivity {
 
     private void initUI(){
         btnSubmmit = (Button) findViewById(R.id.submmitbtn);
+        editText = (EditText) findViewById(R.id.description);
         spinnerForEventLocation = (Spinner) findViewById(R.id.spinnerForEventLocation);
         timePickerForStartTime = (TimePicker)findViewById(R.id.timePickerForStartTime);
         timePickerForEndTime = (TimePicker)findViewById(R.id.timePickerForEndTime);
@@ -124,6 +127,7 @@ public class CreateEvent extends AppCompatActivity {
                 endHours = timePickerForEndTime.getCurrentHour();
                 endMins = timePickerForEndTime.getCurrentMinute();
             }
+            String desc = editText.getText().toString();
             String event_type = "Beach Cleaning";
             String primary_registered_user = imei + ",";
             Random random = new Random();
@@ -173,8 +177,11 @@ public class CreateEvent extends AppCompatActivity {
                 Toast.makeText(CreateEvent.this, "Start time should be late than current time!", Toast.LENGTH_SHORT).show();
             }else if (startHours > endHours || (startHours == endHours && startMins > endMins) || (startHours == endHours && startMins == endMins)) {
                 Toast.makeText(CreateEvent.this, "Start time should be earlier than end time!", Toast.LENGTH_SHORT).show();
+            }else if (desc.length() > 100) {
+                Toast.makeText(CreateEvent.this, "the limit of description is 100 characters!", Toast.LENGTH_SHORT).show();
             }else {
                 String id = databaseReference.push().getKey();
+                databaseReference.child(id).child("description").setValue(desc);
                 databaseReference.child(id).child("event_date").setValue(event_date);
                 databaseReference.child(id).child("event_start").setValue(start_time);
                 databaseReference.child(id).child("event_end").setValue(end_time);

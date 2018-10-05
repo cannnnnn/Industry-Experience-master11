@@ -145,6 +145,26 @@
                 </LinearLayout>
             </RelativeLayout>
 
+            <TextView
+                android:id="@+id/textViewForEndTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:text="Event Description"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/description"
+                android:inputType="text"
+                android:singleLine="true"
+                style="@style/Widget.AppCompat.EditText"
+                android:visibility="visible" />
+
             <Button
                 android:id="@+id/submmitbtn"
                 android:layout_width="wrap_content"

@@ -8,6 +8,7 @@ import android.support.annotation.MainThread;
 import android.support.annotation.WorkerThread;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.iteration1.savingwildlife.entities.Event;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ViewJoinedEvents extends Fragment {
     View eventView;

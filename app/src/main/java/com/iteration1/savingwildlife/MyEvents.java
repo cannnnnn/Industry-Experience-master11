@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -52,6 +53,27 @@ public class MyEvents extends AppCompatActivity {
         adapter.addFragment(viewMyEvents,"Events Created by Me");
         adapter.addFragment(viewJoinedEvents,"Events Joined by Me");
         mViewPager.setAdapter(adapter);
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
+
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+                if (i == 1){
+
+                }
+                // do your stuff
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+
+            }
+        });
+//        mViewPager.addOnPageChangeListener(this);
+//        Objects.requireNonNull(mViewPager.getAdapter()).notifyDataSetChanged();
         mViewPagerIndicator.setViewPager(mViewPager);
     }
 
@@ -86,6 +108,12 @@ public class MyEvents extends AppCompatActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             return fragmenTitleList.get(position);
+        }
+
+        @Override
+        public int getItemPosition(Object object) {
+            // POSITION_NONE makes it possible to reload the PagerAdapter
+            return POSITION_NONE;
         }
 
         public void addFragment(Fragment fragment, String title) {

@@ -24,6 +24,7 @@
     <string name="make_reports">Make report</string>
     <string name="find_events">Find events</string>
     <string name="beach_list">Beach list</string>
+    <string name="description">limit is 100 characters</string>
 
 
 </resources>

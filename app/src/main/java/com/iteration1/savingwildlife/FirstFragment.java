@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FirstFragment extends Fragment{
 
@@ -75,6 +76,7 @@ public class FirstFragment extends Fragment{
                 Intent intent = new Intent();
                 intent.setClass(getContext(),MyEvents.class);
                 startActivity(intent);
+                Toast.makeText(getActivity(), "click to edit the event!", Toast.LENGTH_SHORT).show();
             }
         });
         return thisView;
